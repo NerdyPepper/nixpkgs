@@ -238,8 +238,6 @@ let
 
     decompress =  callPackage ../development/ocaml-modules/decompress { };
 
-    decompress-1-2 = callPackage ../development/ocaml-modules/decompress/1.2.nix { };
-
     diet =  callPackage ../development/ocaml-modules/diet { };
 
     digestif =  callPackage ../development/ocaml-modules/digestif { };
@@ -415,9 +413,7 @@ let
 
     hxd = callPackage ../development/ocaml-modules/hxd { };
 
-    imagelib = callPackage ../development/ocaml-modules/imagelib {
-      decompress = decompress-1-2;
-    };
+    imagelib = callPackage ../development/ocaml-modules/imagelib { };
 
     inotify = callPackage ../development/ocaml-modules/inotify { };
 
@@ -691,6 +687,8 @@ let
 
     mirage-crypto = callPackage ../development/ocaml-modules/mirage-crypto { };
 
+    mirage-crypto-ec = callPackage ../development/ocaml-modules/mirage-crypto/ec.nix { };
+
     mirage-crypto-pk = callPackage ../development/ocaml-modules/mirage-crypto/pk.nix { };
 
     mirage-crypto-rng = callPackage ../development/ocaml-modules/mirage-crypto/rng.nix { };
@@ -793,6 +791,8 @@ let
     ocaml-freestanding = callPackage ../development/ocaml-modules/ocaml-freestanding { };
 
     ocaml_gettext = callPackage ../development/ocaml-modules/ocaml-gettext { };
+
+    gettext-camomile = callPackage ../development/ocaml-modules/ocaml-gettext/camomile.nix { };
 
     gettext-stub = callPackage ../development/ocaml-modules/ocaml-gettext/stub.nix { };
 
@@ -929,6 +929,8 @@ let
     ounit2 = callPackage ../development/ocaml-modules/ounit2 { };
 
     parse-argv = callPackage ../development/ocaml-modules/parse-argv { };
+
+    pbkdf = callPackage ../development/ocaml-modules/pbkdf { };
 
     pcap-format = callPackage ../development/ocaml-modules/pcap-format { };
 
